@@ -28,18 +28,20 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_select_cheat_released()
 {
-    //ui->stackedWidget->setCurrentIndex(2); 発表準備中の画面に飛んでから処理できるようにしたい
+    ui->stackedWidget->setCurrentIndex(2); //発表準備中の画面に飛んでから処理できるようにしたい
     //QTimer::singleShot(2000,this);
-    result_path1 = RESULT_PATH; //受け取ったパス(仮)を代入
+    //QThread::sleep(2); 遷移する前の画面で止まっちゃう
+
     //error = ERRORcheck; //エラー判断用のグローバル変数を作成し、エラーの場合はそこに何かしらの文字列を入れてもらうようにしたい（今回は"error01"）
     QString Qerror = QString::fromStdString(error); //受け取った文字列を変換
-    //QThread::sleep(2); 遷移する前の画面で止まっちゃう
+
     if(Qerror.compare(ERRORcheck, Qt::CaseSensitive) == 0 ){
         ui->stackedWidget->setCurrentIndex(3); //受け取った文字列が予め決めていた文字列と一致した場合、エラー画面に遷移
     }
     else{
         //結果を表示する前に、2秒ほど会議中の画面を入れたほうがいいかなと思ったので考えてます
         ui->stackedWidget->setCurrentIndex(4); //結果表示画面に遷移
+        result_path1 = RESULT_PATH; //受け取ったパス(仮)を代入
         QString Qresult_path = QString::fromStdString(result_path1); //受け取ったパスを変換
         QPixmap pix(Qresult_path);
         ui->result->setPixmap(pix);
