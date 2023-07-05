@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QtGui>
 #include <QPixmap>
+#include <QTimer>
 
 
 
@@ -22,6 +23,8 @@ public:
 
 private slots:
     void on_select_cheat_released();
+
+    void screen_transition();
 
     void on_select_jiriki_released();
 
