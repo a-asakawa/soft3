@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1048</width>
-    <height>591</height>
+    <width>1618</width>
+    <height>1085</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -65,14 +65,14 @@ background-color: rgb(251, 252, 197);</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>665</width>
-                <height>182</height>
+                <width>0</width>
+                <height>0</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>500</width>
-                <height>140</height>
+                <width>1080</width>
+                <height>320</height>
                </size>
               </property>
               <property name="text">
@@ -129,7 +129,7 @@ background-color: rgb(251, 252, 197);</string>
               </property>
               <property name="maximumSize">
                <size>
-                <width>431</width>
+                <width>600</width>
                 <height>80</height>
                </size>
               </property>
@@ -271,25 +271,25 @@ background-color: rgb(251, 252, 197);</string>
                 </property>
                </spacer>
               </item>
-              <item>
+              <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
                <widget class="QLabel" name="label_3">
                 <property name="minimumSize">
                  <size>
-                  <width>270</width>
-                  <height>129</height>
+                  <width>0</width>
+                  <height>0</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
                   <width>600</width>
-                  <height>300</height>
+                  <height>330</height>
                  </size>
                 </property>
                 <property name="text">
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap>../チートモード.png</pixmap>
+                 <pixmap>../mode_cheat.png</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -428,6 +428,9 @@ background-color: rgb(251, 252, 197);</string>
                 </disabled>
                </palette>
               </property>
+              <property name="styleSheet">
+               <string notr="true">font: 75 30pt &quot;System-ui&quot;;</string>
+              </property>
               <property name="text">
                <string>チートモード</string>
               </property>
@@ -452,25 +455,25 @@ background-color: rgb(251, 252, 197);</string>
                 </property>
                </spacer>
               </item>
-              <item>
+              <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
                <widget class="QLabel" name="label_4">
                 <property name="minimumSize">
                  <size>
-                  <width>250</width>
-                  <height>121</height>
+                  <width>0</width>
+                  <height>0</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
                   <width>600</width>
-                  <height>300</height>
+                  <height>330</height>
                  </size>
                 </property>
                 <property name="text">
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap>../自力モード.png</pixmap>
+                 <pixmap>../mode_jiriki.png</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -511,8 +514,8 @@ background-color: rgb(251, 252, 197);</string>
               </property>
               <property name="maximumSize">
                <size>
-                <width>500</width>
-                <height>80</height>
+                <width>700</width>
+                <height>100</height>
                </size>
               </property>
               <property name="palette">
@@ -606,6 +609,9 @@ background-color: rgb(251, 252, 197);</string>
                 </disabled>
                </palette>
               </property>
+              <property name="styleSheet">
+               <string notr="true">font: 75 30pt &quot;System-ui&quot;;</string>
+              </property>
               <property name="text">
                <string>自力モード</string>
               </property>
@@ -655,19 +661,24 @@ background-color: rgb(251, 252, 197);</string>
             <item>
              <layout class="QVBoxLayout" name="verticalLayout_7">
               <item>
-               <widget class="QLabel" name="label_9">
-                <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600;&quot;&gt;発表準備中...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
-               </widget>
-              </item>
-              <item>
                <widget class="QLabel" name="label_10">
+                <property name="minimumSize">
+                 <size>
+                  <width>300</width>
+                  <height>280</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>700</width>
+                  <height>600</height>
+                 </size>
+                </property>
                 <property name="text">
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap>../loding.png</pixmap>
+                 <pixmap>../junbi.png</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -743,19 +754,18 @@ background-color: rgb(251, 252, 197);</string>
             <item>
              <layout class="QVBoxLayout" name="verticalLayout_5">
               <item>
-               <widget class="QLabel" name="label_5">
-                <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;エラーが発生しました...!!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
-               </widget>
-              </item>
-              <item>
                <widget class="QLabel" name="label_6">
+                <property name="maximumSize">
+                 <size>
+                  <width>700</width>
+                  <height>500</height>
+                 </size>
+                </property>
                 <property name="text">
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap>../error.png</pixmap>
+                 <pixmap>../pic_error.png</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -855,31 +865,24 @@ background-color: rgb(251, 252, 197);</string>
            </spacer>
           </item>
           <item>
-           <widget class="QLabel" name="label_8">
-            <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;会議の結果、見つかった間違い箇所はこちらです！&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QLabel" name="label_7">
             <property name="minimumSize">
              <size>
-              <width>344</width>
-              <height>374</height>
+              <width>400</width>
+              <height>280</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>650</width>
-              <height>700</height>
+              <width>550</width>
+              <height>300</height>
              </size>
             </property>
             <property name="text">
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap>../../ダウンロード/resultill.png</pixmap>
+             <pixmap>../people_result.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -899,7 +902,7 @@ background-color: rgb(251, 252, 197);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1048</width>
+     <width>1618</width>
      <height>28</height>
     </rect>
    </property>
